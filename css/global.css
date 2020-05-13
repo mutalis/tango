@@ -11,7 +11,6 @@
   --body-font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   --radius: .5rem;
   --logo-image: url("../images/tango.svg");
-  /* --form-width: 650px; */
 }
 
 /* Base */
@@ -91,10 +90,6 @@ footer {
   /* background-color: #ffcc5c; */
 }
 
-footer p {
-  margin: 0 2rem;
-}
-
 .sr-payment-summary {
   margin-bottom: 2rem;
   text-align: center;
@@ -117,9 +112,7 @@ footer p {
   padding: 0.5rem;
   border: 0.1rem solid #e8e8e8;
   border-radius: 0.5rem;
-  /* max-width: 40rem; */
   min-width: 25rem;
-  /* width: 100% */
 }
 
 /* Buttons and links */
@@ -197,8 +190,6 @@ a:active {
 }
 
 .banner {
-  /* max-width: 825px; */
-  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -214,10 +205,51 @@ a:active {
 
 
 /* Responsiveness */
-@media screen and (max-width: 550px) {
 
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
   .logo {
     background-position: center;
   }
+}
 
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+  .logo {
+    background-position: center;
+  }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+  .logo {
+    background-position: center;
+    }
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+  .logo {
+    background-position: center;
+    }
 }
